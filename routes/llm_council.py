@@ -1,6 +1,7 @@
 import json
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -23,6 +24,7 @@ DEFAULT_COURSE_NAME = "cropwizard-1.5"
 DEFAULT_TEMPERATURE = 0.1
 DEFAULT_RETRIEVAL_ONLY = False
 FILES_DIR = Path(__file__).resolve().parents[1] / "files"
+LLM_COUNCIL_FILES_DIR = Path(__file__).resolve().parents[1] / "llm-council-files"
 
 
 class ConsortiumRequest(BaseModel):
@@ -201,6 +203,31 @@ def select_best_response(
     return results[best_model]
 
 
+def save_all_model_results(
+    results: dict[str, ModelResponse],
+    session_id: str | None,
+) -> str:
+    LLM_COUNCIL_FILES_DIR.mkdir(parents=True, exist_ok=True)
+    file_stem = session_id or datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+    file_path = LLM_COUNCIL_FILES_DIR / f"{file_stem}.json"
+
+    # Required output shape: top-level keys are model names.
+    content = {
+        model_name: {
+            "response": model_response.response,
+            "is_best": model_response.is_best,
+            "score": model_response.score,
+        }
+        for model_name, model_response in results.items()
+    }
+
+    with file_path.open("w", encoding="utf-8") as fp:
+        json.dump(content, fp, indent=2)
+
+    print(f"[llm_council] Saved model results to {file_path}")
+    return str(file_path)
+
+
 @router.post("/llm_consortium", response_model=ConsortiumResponse)
 def llm_consortium(payload: ConsortiumRequest | str = Body(...)) -> ConsortiumResponse:
     print("[llm_council] /llm_consortium called")
@@ -296,6 +323,7 @@ def llm_consortium(payload: ConsortiumRequest | str = Body(...)) -> ConsortiumRe
 
     best = select_best_response(results, diagnosis_summary)
     if best is None:
+        debug["llm_council_file"] = save_all_model_results(results, payload.session_id)
         print("[llm_council] Returning all results; best model not found")
         return ConsortiumResponse(results=results, debug=debug)
 
@@ -332,6 +360,7 @@ def llm_consortium(payload: ConsortiumRequest | str = Body(...)) -> ConsortiumRe
     results[best.model].is_best = True
     debug["best_model"] = best.model
     debug["best_score"] = results[best.model].score
+    debug["llm_council_file"] = save_all_model_results(results, payload.session_id)
     print(f"[llm_council] Final best model={best.model} score={results[best.model].score}")
 
     if best and isinstance(results[best.model].response, dict) and "final_summary" in results[best.model].response:

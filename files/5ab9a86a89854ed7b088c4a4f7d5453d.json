@@ -1,0 +1,206 @@
+{
+  "FarmerIssueDescription": "i see rotting on my corn",
+  "session_id": "5ab9a86a89854ed7b088c4a4f7d5453d",
+  "image_url": "https://hmpbluqetyssiccpxzzp.supabase.co/storage/v1/object/public/crop-images/uploads/e433fd32b2cb4be2b8285fe53ec4e10d.jpg",
+  "field_conditions": {
+    "latitude": 40.11032594041533,
+    "longitude": -88.21710665244596,
+    "temperature_c": 5.2,
+    "windspeed_kmh": 17.3,
+    "condition_code": 0,
+    "is_day": true,
+    "humidity_%": 92,
+    "feels_like_c": 2.2,
+    "precipitation_mm": 0.0,
+    "rain_mm": 0.0,
+    "snowfall_cm": 0.0,
+    "uv_index": 0.15,
+    "cloudcover_%": 100,
+    "windirection_deg": 275,
+    "soil_temperature_c": 7.7,
+    "soil_moisture_%": 0.319,
+    "evapotranspiration_mm": 0.0
+  },
+  "crop_diagnosis": {
+    "status_code": 200,
+    "response": {
+      "weather_context": {
+        "temperature": 5.2,
+        "temperature_unit": "celsius",
+        "humidity": 92,
+        "precipitation_recent": 0.0,
+        "precipitation_unit": "mm",
+        "wind_speed": 17.3,
+        "wind_speed_unit": "kmh",
+        "conditions": "Overcast, cool (5.2\u00c2\u00b0C), very high humidity (92%), no recent precipitation, moderate westerly wind",
+        "disease_pressure": "moderate",
+        "disease_favorable_conditions": false,
+        "weather_impact_analysis": "Temperatures near 5\u00c2\u00b0C are below optimal for most ear-rot fungi, including Aspergillus flavus, which favors warmer conditions (>20\u00c2\u00b0C). However, very high humidity (92%) and full cloud cover can maintain wet microclimates within husks and on exposed ears, allowing previously established fungi to persist and sporulate. Lack of recent rainfall reduces immediate splash-dispersal, but moderate wind can still move spores; overall, current conditions slow new infections but do not halt mold already present on ears."
+      },
+      "image_description": {
+        "crop_type": "corn",
+        "affected_parts": [
+          "ear",
+          "kernels",
+          "ear tip"
+        ],
+        "plant_condition": "Ear tip shows dense, fuzzy olive- to greenish-gray mold with localized kernel decay; majority of lower kernels remain intact and yellow.",
+        "environment": "Close-up of a mature ear with husk removed/exposed; field setting at late development or harvest."
+      },
+      "disease_indicators": {
+        "discoloration": {
+          "present": true,
+          "types": [
+            "olive-green",
+            "greenish-gray",
+            "whitish patches"
+          ],
+          "description": "Olive- to greenish-gray fungal growth concentrated at the ear tip with some whitish mycelial patches on adjacent kernels."
+        },
+        "lesions_or_spots": {
+          "present": false,
+          "characteristics": {
+            "size": "",
+            "shape": "",
+            "color": "",
+            "texture": "",
+            "distribution": ""
+          }
+        },
+        "wilting": {
+          "present": false,
+          "severity": ""
+        },
+        "growth_abnormalities": {
+          "present": false,
+          "types": []
+        },
+        "surface_changes": {
+          "present": true,
+          "description": "Thick, fuzzy mold mat at the ear tip; powdery-appearing conidia in olive-green tones."
+        },
+        "necrosis": {
+          "present": true,
+          "location": "ear tip and several adjacent kernels",
+          "extent": "Localized at upper ear; affected kernels show darkening and tissue breakdown."
+        }
+      },
+      "diagnosis": {
+        "disease_name": {
+          "common_name": "Aspergillus ear rot",
+          "scientific_name": "Aspergillus flavus"
+        },
+        "pathogen_type": "fungal",
+        "confidence_level": "medium",
+        "key_diagnostic_features": [
+          "Olive- to greenish mold concentrated at the ear tip",
+          "Localized kernel decay without pink/red coloration",
+          "Symptom pattern consistent with infection via silks and persistence on exposed tips"
+        ],
+        "differential_diagnoses": [
+          {
+            "disease_name": "Penicillium ear rot",
+            "likelihood": "Possible but less likely; typically shows distinct blue-green molds on damaged or stored grain rather than olive-green masses at the tip in the field."
+          },
+          {
+            "disease_name": "Fusarium/Gibberella ear rot",
+            "likelihood": "Less likely; these often present whitish to pink/red mold and can progress more uniformly down the ear rather than a dense olive-green mass at the tip."
+          },
+          {
+            "disease_name": "Diplodia ear rot",
+            "likelihood": "Unlikely; usually white mold starting at the base of the ear with black pycnidia on husks and cobs."
+          }
+        ],
+        "severity": "moderate",
+        "weather_correlation": "Current cool temperatures are not optimal for Aspergillus growth, but very high humidity can sustain visible mold already established from earlier warmer, humid periods or from insect/silk-mediated infections; thus, ongoing spread is slow, yet the risk of contamination persists until ears are harvested and dried."
+      },
+      "recommendations": {
+        "immediate_actions": [
+          "Prioritize harvest of affected areas to limit further mold development and potential mycotoxin accumulation; keep lots from heavily infected areas separate.",
+          "Avoid handling ears when wet; minimize husk removal in the field to reduce spore spread.",
+          "Use PPE (N95 or better) when working around moldy grain to protect respiratory health."
+        ],
+        "treatment_options": [
+          {
+            "method": "Timely harvest",
+            "description": "Harvest as soon as field conditions allow; segregate visibly moldy grain to reduce cross-contamination and facilitate targeted testing.",
+            "effectiveness": "High if implemented promptly",
+            "weather_timing": "Proceed during current precipitation-free window; cool, overcast weather helps reduce field drying losses but does not remove existing mold."
+          },
+          {
+            "method": "Rapid drying",
+            "description": "Dry shelled corn to \u00e2\u0089\u00a415% moisture as quickly as possible (\u00e2\u0089\u00a413% for long-term storage) to stop Aspergillus growth and limit aflatoxin development.",
+            "effectiveness": "High for post-harvest suppression",
+            "weather_timing": "Immediate after harvest; do not delay due to high ambient humidity."
+          },
+          {
+            "method": "Cleaning and segregation",
+            "description": "Clean grain to remove fines and damaged/moldy kernels; store suspect lots separately and label for testing.",
+            "effectiveness": "Moderate to high; reduces mycotoxin load by removing most-contaminated fractions",
+            "weather_timing": "Immediate during/after harvest regardless of weather."
+          },
+          {
+            "method": "Aerated storage management",
+            "description": "Cool and aerate bins to maintain low grain temperatures; monitor moisture migration to prevent condensation hotspots.",
+            "effectiveness": "High for preventing further mold growth during storage",
+            "weather_timing": "Begin upon bin fill; use cool ambient air when available."
+          }
+        ],
+        "preventive_measures": [
+          "Select hybrids with good ear mold tolerance and tight husk coverage; consider earlier maturity to avoid late-season heat/humidity during silking.",
+          "Manage insects that wound ears (e.g., corn earworm, European corn borer) to reduce infection courts.",
+          "Optimize irrigation to avoid prolonged silk wetness; improve field drainage and residue management.",
+          "Rotate crops and manage residue to reduce inoculum and insect pressure.",
+          "Plan timely harvest and proper drying every season to limit ear-rot progression and mycotoxins."
+        ],
+        "monitoring_advice": "Scout multiple spots per field (e.g., 10\u00e2\u0080\u009320 ears per area) focusing on ear tips for olive-green mold. If warm, humid weather (>20\u00c2\u00b0C with high RH) returns before harvest, increase scouting frequency. During storage, check temperature and moisture weekly for the first month and biweekly thereafter; sample suspect lots for aflatoxin.",
+        "weather_based_recommendations": [
+          "Use the current dry, overcast period to harvest and immediately dry grain; cool ambient air will aid aeration.",
+          "If forecast indicates rain or warming above 15\u00e2\u0080\u009320\u00c2\u00b0C with continued high humidity, accelerate harvest priority for affected fields and plan additional scouting.",
+          "Avoid field operations when foliage/ears are wet to limit spore spread and mechanical damage that can worsen ear rots."
+        ],
+        "lab_confirmation_recommended": true
+      },
+      "sources": [
+        {
+          "title": "Aspergillus Ear Rot of Corn",
+          "author": "Crop Protection Network",
+          "type": "extension_publication",
+          "url": "https://cropprotectionnetwork.org/resources/articles/diseases/aspergillus-ear-rot-of-corn",
+          "year": 2020
+        },
+        {
+          "title": "Corn ear rots: Recognition and management",
+          "author": "Iowa State University Extension and Outreach",
+          "type": "university_publication",
+          "url": "https://crops.extension.iastate.edu/cropnews/2019/09/corn-ear-rots-recognition-and-management",
+          "year": 2019
+        },
+        {
+          "title": "Corn ear rots and mycotoxins",
+          "author": "University of Minnesota Extension",
+          "type": "extension_publication",
+          "url": "https://extension.umn.edu/corn-pest-management/corn-ear-rots",
+          "year": 2023
+        },
+        {
+          "title": "Compendium of Corn Diseases, 4th Edition",
+          "author": "American Phytopathological Society",
+          "type": "textbook",
+          "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/CornEarRots.aspx",
+          "year": 2016
+        }
+      ],
+      "limitations": "Diagnosis is based on a single image and current weather snapshot; Aspergillus can resemble Penicillium in color under some conditions. Mycotoxin (aflatoxin) levels cannot be inferred from symptoms and must be confirmed by laboratory testing. Consider sending samples for pathogen confirmation and mycotoxin analysis."
+    }
+  },
+  "traditional_ml_prediction": {
+    "status_code": 200,
+    "response": {
+      "disease": "maize ear rot",
+      "confidence": 1.0,
+      "confidence_pct": "100.00%",
+      "region": "Midwest"
+    }
+  }
+}
