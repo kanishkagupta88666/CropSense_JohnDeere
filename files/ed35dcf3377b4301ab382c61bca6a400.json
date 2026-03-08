@@ -1,0 +1,218 @@
+{
+  "FarmerIssueDescription": "i see rottings in my corn",
+  "session_id": "ed35dcf3377b4301ab382c61bca6a400",
+  "image_url": "https://hmpbluqetyssiccpxzzp.supabase.co/storage/v1/object/public/crop-images/uploads/773b0d909a4849d7925fce20777ad861.jpg",
+  "field_conditions": {
+    "latitude": 40.1103661058786,
+    "longitude": -88.21710226886417,
+    "temperature_c": 2.2,
+    "windspeed_kmh": 12.7,
+    "condition_code": 0,
+    "is_day": true,
+    "humidity_%": 92,
+    "feels_like_c": 2.2,
+    "precipitation_mm": 0.0,
+    "rain_mm": 0.0,
+    "snowfall_cm": 0.0,
+    "uv_index": 0.15,
+    "cloudcover_%": 100,
+    "windirection_deg": 275,
+    "soil_temperature_c": 7.7,
+    "soil_moisture_%": 0.319,
+    "evapotranspiration_mm": 0.0
+  },
+  "crop_diagnosis": {
+    "status_code": 200,
+    "response": {
+      "weather_context": {
+        "temperature": 2.2,
+        "temperature_unit": "celsius",
+        "humidity": 92,
+        "precipitation_recent": 0.0,
+        "precipitation_unit": "mm",
+        "wind_speed": 12.7,
+        "wind_speed_unit": "kmh",
+        "conditions": "Cloudy, very high humidity (92%), cold (2.2 C), no recent precipitation, westerly wind.",
+        "disease_pressure": "moderate",
+        "disease_favorable_conditions": true,
+        "weather_impact_analysis": "Very high humidity and full cloud cover slow field drying of ears and favor persistence and sporulation of tip and kernel molds, including Penicillium ear rot. Although the temperature is cold, Penicillium species are capable of growth at low temperatures, so existing infections can persist and slowly progress, especially where kernels remain moist; lack of rainfall limits new splash dispersal but does not reduce risk within already infected ear tips. Rapid post-harvest drying and cooling are critical in this weather pattern to halt further mold development Document 1; Document 3; Document 4; Document 7."
+      },
+      "image_description": {
+        "crop_type": "corn (maize)",
+        "affected_parts": [
+          "ear",
+          "kernels",
+          "tip of ear",
+          "silk remnants"
+        ],
+        "plant_condition": "Ear tip shows dense blue-green fuzzy mold with adjacent kernels discolored and some white mold patches; lower kernels appear sound.",
+        "environment": "Field setting; no visible standing water; cool, humid, overcast conditions consistent with the weather data."
+      },
+      "disease_indicators": {
+        "discoloration": {
+          "present": true,
+          "types": [
+            "blue-green",
+            "gray-green",
+            "white"
+          ],
+          "description": "Pronounced blue-green to teal mold mass at the ear tip with some adjacent white mold growth on kernels."
+        },
+        "lesions_or_spots": {
+          "present": true,
+          "characteristics": {
+            "size": "Aggregated patches covering several tip kernels",
+            "shape": "Irregular, concentrated at the tip and moving downward",
+            "color": "Blue-green to gray-green with some white areas",
+            "texture": "Fuzzy and powdery mold growth",
+            "distribution": "Localized at the ear tip, spreading to adjacent rows"
+          }
+        },
+        "wilting": {
+          "present": false,
+          "severity": ""
+        },
+        "growth_abnormalities": {
+          "present": false,
+          "types": []
+        },
+        "surface_changes": {
+          "present": true,
+          "description": "Fuzzy sporulating mold mat at the tip; some kernels appear water-soaked or slightly slimy where rot is active."
+        },
+        "necrosis": {
+          "present": true,
+          "location": "Ear tip and uppermost kernels",
+          "extent": "Severe at tip, limited spread to adjacent kernels"
+        }
+      },
+      "diagnosis": {
+        "disease_name": {
+          "common_name": "Penicillium ear rot (blue-green ear rot)",
+          "scientific_name": "Penicillium spp. (commonly P. oxalicum, P. citrinum, and related species)"
+        },
+        "pathogen_type": "fungal",
+        "confidence_level": "high",
+        "key_diagnostic_features": [
+          "Distinct blue-green to teal fuzzy mold mass centered at the ear tip",
+          "Rot and shriveling of tip kernels with progression downward",
+          "Presence of white to green mold patches on adjacent kernels",
+          "Association with delayed drying/high humidity or damaged kernels"
+        ],
+        "differential_diagnoses": [
+          {
+            "disease_name": "Aspergillus ear rot (Aspergillus flavus)",
+            "likelihood": "Lower likelihood\u00e2\u0080\u0094typically yellow-green powdery mold favored by hot, dry conditions, not cool humid weather; color differs from the blue-green growth observed Document 2; Document 3."
+          },
+          {
+            "disease_name": "Fusarium ear rot (Fusarium verticillioides and others)",
+            "likelihood": "Possible but less likely\u00e2\u0080\u0094often shows white to pinkish mold on scattered kernels or silk channels rather than dense blue-green tip growth seen here Document 1; Document 3."
+          },
+          {
+            "disease_name": "Cladosporium ear rot (Cladosporium spp.)",
+            "likelihood": "Less likely\u00e2\u0080\u0094usually sooty dark olive-green superficial growth, often following insect injury, rather than the dense blue-green fuzzy mat Document 3; Document 6."
+          }
+        ],
+        "severity": "moderate",
+        "weather_correlation": "Current very high humidity and cloud cover slow ear drying and favor persistence and sporulation of Penicillium at the ear tip; cold temperatures reduce growth rate but do not prevent it, making timely harvest and rapid drying essential to stop further deterioration Document 1; Document 4; Document 7."
+      },
+      "recommendations": {
+        "immediate_actions": [
+          "Scout multiple field locations to estimate incidence and severity; flag heavily affected areas for separate handling Document 1; Document 6.",
+          "Avoid handling ears when wet to limit mechanical spread of spores and kernel damage Document 1.",
+          "Harvest affected fields or patches as soon as field conditions allow and prioritize these loads for immediate drying and cleaning Document 1; Document 2.",
+          "Use PPE (gloves, N95/respirator) when handling moldy ears to avoid inhalation exposure to spores and potential mycotoxins Document 6."
+        ],
+        "treatment_options": [
+          {
+            "method": "Timely harvest, rapid drying, and cooling",
+            "description": "Harvest promptly; clean grain to remove fines and lightweight, moldy kernels; dry grain quickly to 15% moisture or lower for short-term storage and 13\u00e2\u0080\u009314% for long-term, then cool with aeration to near ambient (ideally below 10 C) to suppress further mold growth.",
+            "effectiveness": "High for preventing further development; no curative field fungicide exists for established ear rots at this stage.",
+            "weather_timing": "Capitalize on the next dry window. With current cold, high humidity slowing field drying, plan artificial drying immediately after harvest; cool grain with ambient aeration given the low outdoor temperatures Document 1; Document 4; Document 5."
+          },
+          {
+            "method": "Segregation and cleaning",
+            "description": "Segregate visibly moldy ears or high-damage loads; adjust combine to increase discard of lightweight tips; consider post-harvest cleaning to remove fines and broken kernels which harbor molds.",
+            "effectiveness": "Moderate to high in reducing mycotoxin and mold load in stored grain when combined with proper drying.",
+            "weather_timing": "Do during harvest and immediately post-harvest while setting up drying and aeration Document 1; Document 4; Document 6."
+          }
+        ],
+        "preventive_measures": [
+          "Select hybrids with good husk coverage and ear tip tightness; consider traits and management that reduce insect damage to ears Document 1; Document 2; Document 6.",
+          "Manage insect pests (e.g., ear-feeding caterpillars) to reduce kernel wounds that predispose ears to mold colonization Document 6.",
+          "Timely harvest to avoid weathering and prolonged field exposure; avoid lodging and mechanical injury to ears Document 1; Document 2.",
+          "Rotate crops and manage residue to reduce inoculum carryover; maintain storage sanitation (clean bins, augers, and handling equipment) Document 1; Document 4.",
+          "Dry grain promptly after harvest and maintain appropriate moisture and temperature for storage duration; monitor and aerate to prevent condensation and hot spots Document 4."
+        ],
+        "monitoring_advice": "During continued high humidity or slow-drying weather, increase field scouting, focusing on ear tips and insect damage. After binning, check grain temperature and moisture frequently (daily for the first 1\u00e2\u0080\u00932 weeks), and watch for crusting, odors, or hot spots; aerate as needed to keep grain cool and dry Document 1; Document 4.",
+        "weather_based_recommendations": [
+          "Because humidity is very high and temperatures are cold, field drying will be slow; prioritize artificial drying and immediate aeration to cool grain after harvest Document 4.",
+          "Harvest during the earliest dry weather window; avoid operations during or immediately after fog/drizzle to prevent spreading spores and increasing kernel injury Document 1.",
+          "If the short-term forecast remains humid and overcast, do not delay harvest of affected areas\u00e2\u0080\u0094rapid drying and cooling will do more to stop mold than leaving ears in the field Document 1; Document 4."
+        ],
+        "lab_confirmation_recommended": true
+      },
+      "sources": [
+        {
+          "title": "Corn Disease: Penicillium Ear Rot (BP-59-W)",
+          "author": "Purdue University Extension",
+          "type": "extension_publication",
+          "url": "https://www.extension.purdue.edu/extmedia/BP/BP-59-W.pdf",
+          "year": 2019
+        },
+        {
+          "title": "Management of Ear and Kernel Rots in Corn",
+          "author": "University of Illinois Extension",
+          "type": "extension_publication",
+          "url": "https://extension.illinois.edu/blogs/illinois-field-crop-diseases/2018-09-16-management-ear-and-kernel-rots-corn",
+          "year": 2018
+        },
+        {
+          "title": "Ear Rots of Corn (PPFS-AG-C-03)",
+          "author": "University of Kentucky Plant Pathology",
+          "type": "university_publication",
+          "url": "https://plantpathology.ca.uky.edu/files/ppfs-ag-c-03.pdf",
+          "year": 2022
+        },
+        {
+          "title": "Managing Dry Grain in Storage (AE-905)",
+          "author": "North Dakota State University Extension",
+          "type": "university_publication",
+          "url": "https://www.ndsu.edu/agriculture/extension/publications/managing-dry-grain-storage",
+          "year": 2017
+        },
+        {
+          "title": "Penicillium ear rot of maize",
+          "author": "CIMMYT",
+          "type": "university_publication",
+          "url": "https://www.cimmyt.org/news/penicillium-ear-rot-of-maize/",
+          "year": 2020
+        },
+        {
+          "title": "Corn Ear Rots and Mycotoxins",
+          "author": "Penn State Extension",
+          "type": "extension_publication",
+          "url": "https://extension.psu.edu/corn-ear-rots-and-mycotoxins",
+          "year": 2013
+        },
+        {
+          "title": "Fungi and Food Spoilage (3rd ed.)",
+          "author": "C.M. D. Pitt and A.D. Hocking",
+          "type": "textbook",
+          "url": "https://link.springer.com/book/10.1007/978-0-387-92207-2",
+          "year": 2009
+        }
+      ],
+      "limitations": "***The CropWizard database doesn't have anything covering this exact question, but here's what I know from my general world knowledge.*** Diagnosis is based on visible symptoms and weather correlation; multiple ear rot fungi can co-occur, and species identification plus mycotoxin testing require laboratory analysis. Mycotoxin profiles differ by fungus, so test grain before feeding or blending; follow local regulations and guidance from grain buyers."
+    }
+  },
+  "traditional_ml_prediction": {
+    "status_code": 200,
+    "response": {
+      "disease": "maize ear rot",
+      "confidence": 1.0,
+      "confidence_pct": "100.00%",
+      "region": "Midwest"
+    }
+  }
+}

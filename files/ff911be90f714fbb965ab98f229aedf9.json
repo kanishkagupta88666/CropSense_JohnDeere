@@ -1,0 +1,184 @@
+{
+  "session_id": "ff911be90f714fbb965ab98f229aedf9",
+  "image_url": "https://hmpbluqetyssiccpxzzp.supabase.co/storage/v1/object/public/crop-images/uploads/031a1ee5b735470fb832f32610e613cd.jpg",
+  "field_conditions": {
+    "latitude": 40.11033273074357,
+    "longitude": -88.21711554593632,
+    "temperature_c": 3.3,
+    "windspeed_kmh": 14.4,
+    "condition_code": 1,
+    "is_day": false,
+    "humidity_%": 92,
+    "feels_like_c": 2.2,
+    "precipitation_mm": 0.0,
+    "rain_mm": 0.0,
+    "snowfall_cm": 0.0,
+    "uv_index": 0.15,
+    "cloudcover_%": 100,
+    "windirection_deg": 275,
+    "soil_temperature_c": 7.7,
+    "soil_moisture_%": 0.319,
+    "evapotranspiration_mm": 0.0
+  },
+  "crop_diagnosis": {
+    "status_code": 200,
+    "response": {
+      "weather_context": {
+        "temperature": 3.3,
+        "temperature_unit": "celsius",
+        "humidity": 92,
+        "precipitation_recent": 0.0,
+        "precipitation_unit": "mm",
+        "wind_speed": 14.4,
+        "wind_speed_unit": "kmh",
+        "conditions": "Cloudy, cool, very humid; no recent precipitation; light westerly winds.",
+        "disease_pressure": "moderate",
+        "disease_favorable_conditions": false,
+        "weather_impact_analysis": "At 3.3\u00c2\u00b0C, infection and sporulation of wheat leaf rust are slow because the pathogen favors milder temperatures (approximately 15\u00e2\u0080\u009322\u00c2\u00b0C) with leaf wetness; however, the very high humidity (92%) can allow urediniospore survival and limited infection if leaf wetness occurs (dew/fog). With no recent precipitation, leaf wetness duration may be limited, so rapid disease development is unlikely until warmer, wetter conditions return. Moderate wind (14.4 km/h) can assist local spore movement within the field, but current overall weather is suboptimal for fast epidemic growth Document 1; Document 3."
+      },
+      "image_description": {
+        "crop_type": "wheat",
+        "affected_parts": [
+          "leaves"
+        ],
+        "plant_condition": "Leaf shows numerous small, orange to reddish-brown powdery pustules on the blade, many aligned loosely along veins and in scattered clusters; surrounding tissue remains largely green, consistent with early leaf rust symptoms Document 1; Document 2.",
+        "environment": "Dense wheat canopy visible in background under cloudy, low-light conditions; close-up suggests recent high humidity or dew in the field."
+      },
+      "disease_indicators": {
+        "discoloration": {
+          "present": true,
+          "types": [
+            "orange",
+            "red-brown"
+          ],
+          "description": "Abundant orange to reddish-brown powdery pustules typical of uredinia on wheat leaves Document 1; Document 2."
+        },
+        "lesions_or_spots": {
+          "present": true,
+          "characteristics": {
+            "size": "small (approximately 0.5\u00e2\u0080\u00931.5 mm)",
+            "shape": "round to oval/elongated pustules (uredinia)",
+            "color": "orange to reddish-brown",
+            "texture": "powdery, raised; spores rub off easily",
+            "distribution": "scattered and in loose stripes parallel to veins"
+          }
+        },
+        "wilting": {
+          "present": false,
+          "severity": ""
+        },
+        "growth_abnormalities": {
+          "present": false,
+          "types": []
+        },
+        "surface_changes": {
+          "present": true,
+          "description": "Epidermis ruptured by powdery rust pustules releasing spores Document 1; Document 2."
+        },
+        "necrosis": {
+          "present": false,
+          "location": "",
+          "extent": ""
+        }
+      },
+      "diagnosis": {
+        "disease_name": {
+          "common_name": "Leaf Rust (Brown Rust) of Wheat",
+          "scientific_name": "Puccinia triticina"
+        },
+        "pathogen_type": "fungal",
+        "confidence_level": "high",
+        "key_diagnostic_features": [
+          "Small orange-brown to reddish, powdery pustules (uredinia) confined mainly to leaves Document 1; Document 2.",
+          "Pustules may align loosely along veins but are not strictly in bright yellow stripes as in stripe rust Document 1.",
+          "Spores readily rub off on fingers/clothing, leaving rusty dust Document 1."
+        ],
+        "differential_diagnoses": [
+          {
+            "disease_name": "Stripe Rust (Puccinia striiformis f. sp. tritici)",
+            "likelihood": "Less likely; typically forms bright yellow, linear stripes with more distinct alignment and lemon-yellow pustules, favored by cooler temperatures than leaf rust Document 1; Document 3."
+          },
+          {
+            "disease_name": "Stem Rust (Puccinia graminis f. sp. tritici)",
+            "likelihood": "Unlikely; darker red-brown, larger pustules often on stems and leaf sheaths as well as leaves; lesions are more elongated and can tear tissue extensively Document 2."
+          },
+          {
+            "disease_name": "Bacterial leaf spots",
+            "likelihood": "Unlikely; bacterial lesions show water-soaking/greasy margins and lack powdery spores; often angular with yellow halos Document 2."
+          }
+        ],
+        "severity": "early_stage",
+        "weather_correlation": "Very high humidity (92%) can support spore viability and limited infection, but the current cool temperature (3.3\u00c2\u00b0C) is below the optimal range for leaf rust infection and sporulation (generally mid-teens to low 20s \u00c2\u00b0C) and absence of recent rain limits prolonged leaf wetness; therefore, short-term progression should be slow until conditions warm and remain wet Document 1; Document 3."
+      },
+      "recommendations": {
+        "immediate_actions": [
+          "Avoid working in the field when foliage is wet to reduce spore movement on clothing/equipment Document 1.",
+          "Flag and map affected areas to prioritize scouting and any targeted interventions Document 1.",
+          "Clean tools and equipment after field entry to limit spread between fields Document 1."
+        ],
+        "treatment_options": [
+          {
+            "method": "Fungicide application (FRAC 3 triazoles, FRAC 11 strobilurins, and/or FRAC 7 SDHI premixes)",
+            "description": "If the crop is at a susceptible stage and disease is spreading or forecasted weather turns warm and wet, apply a registered foliar fungicide effective against wheat rusts; rotate or mix modes of action to manage resistance and ensure good coverage, especially on upper leaves (flag leaf) Document 1; Document 3; Document 4.",
+            "effectiveness": "High when applied early (before extensive lesion development) and under conditions that allow good drying/retention on leaves Document 1; Document 4.",
+            "weather_timing": "Prefer a spraying window with no rain/dew for 12\u00e2\u0080\u009324 hours and temperatures trending towards rust-favorable (\u00e2\u0089\u00a515\u00c2\u00b0C); delay if immediate rain/fog is expected to avoid wash-off and poor deposition Document 1; Document 4."
+          }
+        ],
+        "preventive_measures": [
+          "Plant resistant/tolerant wheat varieties adapted to your region to reduce epidemic potential Document 1; Document 3.",
+          "Eliminate volunteer wheat and grassy hosts that carry the pathogen between seasons Document 1; Document 3.",
+          "Rotate away from wheat/small grains to reduce inoculum carryover where feasible Document 1; Document 2.",
+          "Use timely, labeled fungicide applications based on scouting thresholds and resistance management (rotate FRAC groups) Document 1; Document 4."
+        ],
+        "monitoring_advice": "Scout weekly, focusing on lower leaves first and moving upward; increase frequency if forecasts indicate warmer (15\u00e2\u0080\u009322\u00c2\u00b0C) and wet/humid periods, as these conditions can drive rapid rust development. Pay close attention to the flag leaf approaching boot/heading, as protecting upper canopy has the greatest yield impact Document 1; Document 3.",
+        "weather_based_recommendations": [
+          "Given current cool temperatures, immediate epidemic growth is unlikely; prepare for intervention if a warming, wet period is forecast in the next 7\u00e2\u0080\u009314 days.",
+          "Time any fungicide to a dry window of at least 12\u00e2\u0080\u009324 hours and avoid spraying immediately before fog/drizzle to prevent wash-off.",
+          "After any warm, rainy spell or extended dew events, re-scout within 3\u00e2\u0080\u00935 days for new pustules on upper leaves.",
+          "If conditions remain cool and dry, prioritize sanitation and monitoring over immediate chemical control."
+        ],
+        "lab_confirmation_recommended": false
+      },
+      "sources": [
+        {
+          "title": "Wheat Leaf Rust (Brown Rust) - Plant Disease Lessons",
+          "author": "E.A. Milus and C.J. De Wolf",
+          "type": "extension_publication",
+          "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/WheatLeafRust.aspx",
+          "year": 2011
+        },
+        {
+          "title": "Compendium of Wheat Diseases and Pests, 3rd/4th ed.",
+          "author": "APS Press (multiple authors)",
+          "type": "textbook",
+          "url": "https://www.apsnet.org/apsstore/shopapspress/Pages/44486.aspx",
+          "year": 2019
+        },
+        {
+          "title": "Wheat leaf rust",
+          "author": "University of Minnesota Extension",
+          "type": "university_publication",
+          "url": "https://extension.umn.edu/crop-diseases/wheat-leaf-rust",
+          "year": 2020
+        },
+        {
+          "title": "Wheat Disease Management and Fungicide Efficacy/Resistance Guidance",
+          "author": "Kansas State University Research and Extension",
+          "type": "extension_publication",
+          "url": "https://bookstore.ksre.k-state.edu/pubs/EP130.pdf",
+          "year": 2020
+        }
+      ],
+      "limitations": "Diagnosis is based on visible symptoms in a single image plus current weather; while characteristic for wheat leaf rust, mixed infections can occur and weather may change rapidly. If symptoms deviate from typical rust (e.g., black telia, stem involvement, bright lemon-yellow linear stripes), or if control fails after appropriate fungicide use, seek lab confirmation to verify pathogen identity and fungicide sensitivity."
+    }
+  },
+  "traditional_ml_prediction": {
+    "status_code": 200,
+    "response": {
+      "disease": "Common_Rust",
+      "confidence": 0.9562,
+      "confidence_pct": "95.62%",
+      "region": "Midwest"
+    }
+  }
+}

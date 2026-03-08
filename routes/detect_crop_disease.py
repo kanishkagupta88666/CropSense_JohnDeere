@@ -68,6 +68,7 @@ def detect_crop_disease(
     print(traditional_ml_result)
 
     council_payload = {
+        "FarmerIssueDescription": payload.farmers_issue_description,
         "session_id": session_id,
         "image_url": image_url,
         "field_conditions": field_conditions,
