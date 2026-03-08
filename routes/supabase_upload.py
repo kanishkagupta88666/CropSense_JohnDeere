@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException
@@ -6,7 +7,9 @@ from pydantic import BaseModel
 
 from supabase_uploader import SupabaseImageUploader
 
-load_dotenv()
+# Always load the .env from project root, even when uvicorn is launched elsewhere.
+ENV_PATH = Path(__file__).resolve().parents[1] / ".env"
+load_dotenv(dotenv_path=ENV_PATH, override=True)
 
 router = APIRouter(tags=["supabase"])
 

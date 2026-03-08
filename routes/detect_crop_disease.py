@@ -34,7 +34,7 @@ def detect_crop_disease(payload: DetectCropDiseaseRequest) -> dict:
             lon=payload.location.longitude,
         )
     )
-    print(field_conditions)
+    print(field_conditions) 
 
     # Step 3: Run crop diagnosis using image URL, user notes, and field conditions.
     crop_diagnosis_result = send_crop_img(
@@ -49,7 +49,6 @@ def detect_crop_disease(payload: DetectCropDiseaseRequest) -> dict:
     # Step 4: Return all intermediate and final outputs for now.
     return {
         "message": "data recieved successfully",
-        # "received_data": payload.model_dump(),
         "image_url": image_url,
         "field_conditions": field_conditions,
         "crop_diagnosis": crop_diagnosis_result,
