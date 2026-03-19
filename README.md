@@ -443,7 +443,7 @@ This project was built during a hackathon. For production use:
 3. **Documentation**: Expand inline code comments
 4. **Code review**: Refactor quick-fix solutions
 
-Pull requests welcome for bug fixes and documentation improvements.
+Pull requests welcome for bug fixes and documentation improvements. 
 
 ---
 
@@ -468,4 +468,4 @@ Built at the **UIUC Precision Digital Agriculture Hackathon 2026** sponsored by 
 
 ## Contact
 
-For questions about this project, please open an issue in the repository.
+For questions about this project, please open an issue in the repository.  
